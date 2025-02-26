@@ -1,0 +1,441 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+   
+}
+
+
+header{
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Base styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Main button styling */
+.dropdown-btn {
+ 
+  color: #767676;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.dropdown-btn:hover {
+  background: #edffee;
+  color: #45a049;
+}
+
+/* Main dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown list items */
+.dropdown-content li {
+  padding: 0;
+  position: relative;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s;
+}
+
+.dropdown-content a:hover {
+  background: #f6f6f6;
+}
+
+/* Submenu styling */
+.submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: white;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 0 4px 4px 4px;
+}
+
+.dropdown-sub:hover .submenu {
+  display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+/* nav */
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    text-align: center;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: #767676;
+    
+}
+
+a:hover{
+   color: #45a049;
+    transition: ease-in 0.3s;
+}
+
+.green{
+    color: #00d261;
+    
+}
+
+.btn button{
+    background-color: #00d261;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    width: 120px;
+    height: 40px;
+
+}
+
+button:hover{
+    background-color: #5fba64;
+    transition: ease-in 0.2s;
+}
+
+nav{
+    background-color: rgb(255, 255, 255);
+}
+
+.text h1{
+    color: #62627d;
+    font-size: 55px;
+}
+
+.text p{
+    color: #85817d;
+    font-size: larger;
+    line-height: 30px;
+}
+
+#play{
+    font-size: 38px;
+    
+}
+
+.watch{
+    color: #85817d;
+    font-size: 23px;
+    
+}
+
+.home-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 100px;
+}
+
+.watch:hover{
+    color: #00d261;
+}
+
+
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.pic{
+    animation: bounce 6s ease-in-out infinite;
+
+}
+
+@keyframes bounce{
+    0%, 100%{transform: translateY(0);}
+    50%{transform: translateY(-20px);}
+}
+
+.bon{
+    animation: bounce 6s ease-in-out infinite;
+
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 75px;
+}
+
+h2{
+    color: #62627d;
+    font-size: 21px;
+}
+
+.row-1{
+    background-color: #f0efef;
+    height: 240px;
+    width: 350px;
+    padding: 40px 30px;
+}
+
+.row-2{
+    background-color: #f0efef;
+    height: 240px;
+    width: 350px;
+    padding: 40px 30px;
+}
+
+.row-3{
+    background-color: #f0efef;
+    height: 240px;
+    width: 350px;
+    padding: 40px 30px;
+}
+
+.pee{
+    width: 290px;
+}
+
+.pee-1{
+        width: 350px;
+}
+
+.cards p{
+    font-size:14px;
+    color:#383636;
+
+}
+
+h2:hover{
+    color: #00d261;
+    transition: ease-in 0.2s;
+}
+
+.cards img{
+    position: relative;
+    right: 8px;
+}
+
+.head{
+    text-align: center;
+    color: #62627d;
+    font-size: 35px;
+}
+
+h3{
+    color: #62627d;
+    font-size: 26px;
+}
+
+.write p{
+    color: #383636;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+}
+
+.tick{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    width: 170%;
+    max-width: 1200px;
+    position: relative;
+    left: 50px;
+}
+
+.counter-item {
+    text-align: center;
+    margin: 20px;
+}
+
+.numbers h1{
+    font-size: 45px;
+    color:#00d261;
+    margin-bottom: 10px;
+}
+
+span .cot {
+    font-size: 2em;
+    color:#383636;
+
+}
+
+
+.first{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+#Services{
+    background-color: #f0efef;
+    height: 1000px;
+    padding: 40px;
+}
+
+.pal-1{
+    background-color: white;
+    height: 350px;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #aaa8a6;
+}
+
+.pal-2{
+    background-color: white;
+    height: 350px;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #aaa8a6;
+    
+}
+
+.pal-3{
+    background-color: white;
+    height: 350px;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #aaa8a6 ;
+    
+}
+
+
+.pal-1 p{
+    font-size: small;
+    line-height: 25px;
+}
+
+.pal-2 p{
+    font-size: small;
+    line-height: 25px;
+}
+
+.pal-3 p{
+    font-size: small;
+    line-height: 25px;
+}
+
+/* second */
+
+.second{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 40px;
+    
+}
+
+.pal-4 p{
+    font-size: small;
+    line-height: 25px;
+}
+
+.pal-5 p{
+    font-size: small;
+    line-height: 25px;
+}
+
+.pal-6 p{
+    font-size: small;
+    line-height: 25px;
+}
+
+.pal-4{
+    background-color: white;
+    height: 350px;
+    text-align: center;
+    padding: 42px;
+    border: 1px solid #aaa8a6;
+}
+
+.pal-5{
+    background-color: white;
+    height: 350px;
+    text-align: center;
+    padding: 43px;
+    border: 1px solid #aaa8a6;
+    
+}
+
+.pal-6{
+    background-color: white;
+    height: 350px;
+    text-align: center;
+    padding: 28px;
+    border: 1px solid #aaa8a6 ;
+    
+}
+
+
+.down{
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 450px;
+  font-weight: 500;
+}
+
+.down a{
+    color: black;
+}
+
+.down a:hover{
+    color: #00d261;
+    transition: ease-in 0.2s;
+}
